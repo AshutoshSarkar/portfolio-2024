@@ -1,0 +1,152 @@
+/* Navbar container (unchanged) */
+.navbar {
+    padding: 20px;
+    background-color: #F9FBF2;
+    position: relative;
+    z-index: 2;
+    border-bottom: 0.2px solid white;
+  }
+  
+  /* Navbar inner container (unchanged) */
+  .navbar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60rem;
+  }
+  
+  /* Logo in navbar (unchanged) */
+  .navbar-logo img {
+    width: 8rem;
+    height: auto;
+    border-radius: 5px;
+    filter: brightness(0);
+  }
+  
+  /* Navbar links (unchanged) */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+  }
+  
+  /* Links styling (unchanged) */
+  .navbar-links li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    padding-bottom: 5px;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Underline effect on hover and active (unchanged) */
+  .navbar-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1d1c1b;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: width 0.4s ease;
+  }
+  
+  .navbar-links li a:hover::after,
+  .navbar-links li a.active::after {
+    width: 100%;
+  }
+  
+  .navbar-links li a:hover,
+  .navbar-links li a.active {
+    color: #7b7b78;
+  }
+  
+  /* Mobile Dropdown Styles */
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .navbar-dropdown {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #F9FBF2; /* Matches navbar background */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  /* Remove dots and add line between items */
+  .navbar-dropdown li {
+    text-align: left;
+    list-style: none; /* Removes the dots */
+    border-bottom: 1px solid #eaeaea; /* Adds a line between items */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .navbar-dropdown li:last-child {
+    border-bottom: none; /* Removes the last border */
+  }
+  
+  .navbar-dropdown li a {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Change background color on hover for dropdown items */
+  .navbar-dropdown li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar-container {
+      justify-content: space-between;
+      gap: 0;
+    }
+  
+    .navbar-links {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-dropdown {
+      display: none;
+    }
+  
+    .navbar-dropdown.show {
+      display: flex;
+    }
+  
+    .navbar-dropdown li a {
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+  

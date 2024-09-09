@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutcard-image img {
+  margin-top: 100px;
+  
+  width: 300px;
+  height: 330px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00b4d8; /* Border color to match button */
+  transition: transform 0.3s ease;
+}
+
+.aboutcard-image img:hover {
+  transform: scale(1.1); /* Slightly zoom on hover */
+}
+
+.aboutcard-content {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.aboutcard-content h4 {
+  font-size: 32px;
+  color: #00b4d8;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+ 
+}
+
+.aboutcard-content h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.aboutcard-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.view-more {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  color: #00b4d8;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.view-more .fa-arrow-right {
+  margin-left: 8px;
+}

@@ -1,0 +1,35 @@
+.aboutcard{
+    display: flex;
+    
+    margin-bottom: 7rem;
+
+   align-items: center;
+   justify-content: center;
+
+}
+
+.animated-slider{
+    margin-top: 65px;
+}
+
+/* Ensure no horizontal or vertical scrolling by default */
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto;   /* Allow vertical scrolling */
+    margin: 0;          /* Remove default margins */
+    padding: 0;         /* Remove default padding */
+  }
+  
+  /* Specific section styles if needed */
+  .home-content,
+  .animated-slider,
+  .aboutcard,
+  .portfolio {
+    overflow: hidden; /* Prevent scrolling within these sections if not needed */
+  }
+
+  .portfolio{
+    margin-top: 0px;;
+
+  }
+  
